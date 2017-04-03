@@ -51,7 +51,7 @@ function requestAndWrite (url, cb) {
     if (body) return cb(null, body)
     mkdirp(path.dirname(filename), function (err) {
       if (err) return cb(err)
-      request(url, {encoding: 'binary'}, function (err, res, body) {
+      request(url, {encoding: null}, function (err, res, body) {
         if (err) return cb(err)
         if (res.statusCode !== 200) return cb(new Error('Bad status: ' + res.statusCode))
         fs.writeFile(filename + '.tmp', body, function (err) {
