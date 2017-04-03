@@ -1,0 +1,29 @@
+{
+  "name": "download-m3u8",
+  "version": "0.0.0",
+  "description": "Download an m3u8 playlist and all assets it links recursively.",
+  "main": "index.js",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "standard": "^9.0.2"
+  },
+  "bin": {
+    "download-m3u8": "./index.js"
+  },
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/download-m3u8.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/download-m3u8/issues"
+  },
+  "homepage": "https://github.com/mafintosh/download-m3u8"
+}
